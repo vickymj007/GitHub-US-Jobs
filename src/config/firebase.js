@@ -4,7 +4,7 @@ import {getFirestore} from 'firebase/firestore'
 
 
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_FB_APIKEY,
+  apiKey:"AIzaSyBmn4e5qFj2hESwBferdLRfjrspyKem2gs",
   authDomain: "tapop-assignment-2fcaa.firebaseapp.com",
   projectId: "tapop-assignment-2fcaa",
   storageBucket: "tapop-assignment-2fcaa.appspot.com",

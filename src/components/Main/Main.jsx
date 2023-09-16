@@ -22,7 +22,7 @@ const Main = () => {
     try {
       const response = await axios.get(`https://data.usajobs.gov/api/search?Keyword=${inputValue}`,{
         headers:{
-          'Authorization-Key':process.env.REACT_APP_USJOBS_APIKEY
+          'Authorization-Key':"l+Px+rfscMsWXQ0hbvyRzODbaPpjgT0TbKri20hKZwA="
       }
       })
       dispatch(setData(response.data))
