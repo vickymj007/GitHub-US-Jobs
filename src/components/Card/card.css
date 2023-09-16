@@ -1,0 +1,63 @@
+.job_card{
+    background-color: white;
+    border-radius: 4px;
+    padding: 16px;
+    width: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    margin: 12px 0;
+}
+.job_card > header > h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+.job_card > header > h5 > span {
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+.job_card > header > p{
+    color: gray;
+    font-size: 12px;
+}
+.job_card > header > p > svg {
+    vertical-align: middle;
+}
+.job_card footer{
+    margin-top: 20px;
+}
+.job_card footer > button,
+.job_card .apply_btn {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background-color: #219ebc;
+    border-radius: 6px;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.job_card footer > button:hover, 
+.job_card .apply_btn:hover{
+    background-color: #1b859f;
+}
+
+.job_content{
+    margin: 8px 0;
+}
+.job_content > p {
+    color: #219ebc;
+    font-size: 12px;
+    font-weight: 400;
+}
+.job_card .salary_tag, 
+.salary_tag{
+    background-color: rgb(199, 199, 199);
+    color: black;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 3px 5px;
+    margin: 8px 0;
+}

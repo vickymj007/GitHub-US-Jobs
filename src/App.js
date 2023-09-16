@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import Main from "./components/Main/Main";
+import JobDetails from "./components/JobDetails/JobDetails";
+import Navbar from "./components/Navbar/Navbar";
+import  { Toaster } from 'react-hot-toast';
+import Login from "./components/Auth/Login";
+
+
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path="/" element={<Navbar/>}>
+    <Route index element={<Main/>}/>
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/job_details/:job_id" element={<JobDetails/>}/>
+  </Route>
+))
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={router}/>
+      <Toaster/>
     </div>
   );
 }

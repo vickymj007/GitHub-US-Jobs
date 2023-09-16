@@ -1,0 +1,32 @@
+.navbar{
+    background-color: #219ebc;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+.navbar_wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.navbar_wrapper > h2 {
+    font-weight: 400;
+    color: white;
+}
+.navbar_wrapper button{
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+.navbar_wrapper button span{
+    background-color: gray;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
