@@ -83,6 +83,7 @@ export const Modal = ({openModal, setOpenModal}) => {
                 onChange={handleFileChange}
             />
             {resumeInfo.file && <p>{resumeInfo.file}</p>}
+            {/* Handle Errors */}
             {error && <p className='error'>{error}</p>}
             <button onClick={handleSubmit}>Submit</button>
         </dialog>

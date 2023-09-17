@@ -1,7 +1,6 @@
 import './jobDetails.css'
 import { useSelector } from 'react-redux'
 import { NavLink, useParams } from 'react-router-dom'
-import toast from 'react-hot-toast';
 import { Modal } from '../Modal/Modal';
 import { useState } from 'react';
 
