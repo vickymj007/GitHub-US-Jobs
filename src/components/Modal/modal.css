@@ -1,0 +1,90 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+.modal > svg {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.modal dialog {
+    padding: 24px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 280px;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    z-index: 98;
+    transform: translateY(-50%) translateX(-50%);
+}
+.modal.open{
+    display: block;
+}
+
+.modal dialog h2{
+    font-weight: 400;
+}
+.modal dialog p {
+    margin-top: -12px;
+    font-size: 12px;
+    color: gray;
+}
+.modal dialog label{
+    background-color: #219ebc;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.modal dialog label svg{
+    vertical-align: middle;
+}
+
+
+.modal dialog input,
+.modal dialog textarea,
+.modal dialog button {
+    width: 100%;
+    border: 2px solid #219ebc;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+.modal dialog textarea{
+    max-width: 250px;
+}
+.modal dialog button {
+    cursor: pointer;
+    background-color: #219ebc;
+    color: white;
+    font-weight: bold;
+}
+.modal dialog button:hover{
+    background-color: #1a7f98;
+}
+
+.modal .error {
+    color: red;
+}

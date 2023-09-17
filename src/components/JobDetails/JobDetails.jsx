@@ -2,9 +2,13 @@ import './jobDetails.css'
 import { useSelector } from 'react-redux'
 import { NavLink, useParams } from 'react-router-dom'
 import toast from 'react-hot-toast';
+import { Modal } from '../Modal/Modal';
+import { useState } from 'react';
 
 const JobDetails = () => {
     const {job_id} = useParams()
+
+    const [openModal, setOpenModal] = useState(false)
 
     const {data} = useSelector(state => state.jobs)
 
@@ -31,12 +35,13 @@ const JobDetails = () => {
                     <p></p>
                 </main>
                 <footer>
-                    <button onClick={()=>toast.success("Applied 👍")}>Apply</button>
+                    <button onClick={()=>setOpenModal(true)}>Apply</button>
                 </footer>
             </div>
             :
             <div>No Jobs Found...</div>
         }
+        <Modal openModal={openModal} setOpenModal={setOpenModal}/>
     </div>
   )
 }

@@ -33,7 +33,6 @@ const Navbar = () => {
             <div className='navbar_wrapper'>
               <h2>GitHub US Jobs</h2>
               {data && <button onClick={handleClick}><span>{data?.displayName.slice(0,1)}</span> Sign out</button>}
-              
             </div>
         </nav>
         <Outlet/>

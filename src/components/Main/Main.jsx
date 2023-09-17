@@ -37,7 +37,7 @@ const Main = () => {
     <div>
         {/* Search Bar */}
         <form className='search_bar' onSubmit={handleClick}>
-          <label htmlFor="search_input">Enter your preferred programming language</label>
+          <label htmlFor="search_input">Enter your preferred programming language or a Job title to search Jobs.</label>
           <input
             type="text"
             id='search_input' 
